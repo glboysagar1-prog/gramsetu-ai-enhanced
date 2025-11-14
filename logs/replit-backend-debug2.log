@@ -1,0 +1,11 @@
+
+> rest-express@1.0.0 dev
+> NODE_ENV=development tsx server/index.ts
+
+DATABASE_URL in db.ts: NOT SET
+Database connection available: NO
+[dotenv@17.2.3] injecting env (4) from .env -- tip: 🔐 encrypt with Dotenvx: https://dotenvx.com
+DATABASE_URL in storage.ts: SET
+Database connection in storage.ts: NOT AVAILABLE
+[dotenv@17.2.3] injecting env (0) from .env -- tip: ✅ audit secrets and track compliance: https://dotenvx.com/ops
+1:22:44 AM [express] serving on port 5003

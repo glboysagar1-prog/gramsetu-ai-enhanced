@@ -1,0 +1,223 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generated_at": "2024-01-15T10:00:00Z",
+    "purpose": "Offline demo mode - pre-seeded data for IIT Bombay Techfest",
+    "valid_credentials": {
+      "citizen": { "email": "citizen@gramsetu.in", "password": "citizen123" },
+      "field": { "email": "field@gramsetu.in", "password": "field123" },
+      "district": { "email": "district@gramsetu.in", "password": "district123" },
+      "state": { "email": "state@gramsetu.in", "password": "state123" },
+      "national": { "email": "admin@gramsetu.in", "password": "admin123" }
+    }
+  },
+  "complaints": [
+    {
+      "id": "C12345",
+      "citizen_id": "CIT001",
+      "category": "Water Supply",
+      "text": "No water supply in Ward 12, Street 5 since two days. Very urgent.",
+      "urgency": "High",
+      "status": "In Progress",
+      "created_at": "2024-01-14T08:30:00Z",
+      "assigned_to": "FW001",
+      "blockchain_tx": "0x7a8f9e3d2c1b0a9f8e7d6c5b4a3f2e1d0c9b8a7f6e5d4c3b2a1f0e9d8c7b6a5",
+      "location": { "ward": 12, "street": "5", "coords": [19.0760, 72.8777] },
+      "evidence": [],
+      "resolution_time": null
+    },
+    {
+      "id": "C12346",
+      "citizen_id": "CIT002",
+      "category": "Electricity",
+      "text": "Frequent power cuts every evening 6-9 PM affecting students.",
+      "urgency": "Medium",
+      "status": "Assigned",
+      "created_at": "2024-01-13T15:20:00Z",
+      "assigned_to": "FW002",
+      "blockchain_tx": "0x8b9f0e4d3c2b1a0f9e8d7c6b5a4f3e2d1c0b9a8f7e6d5c4b3a2f1e0d9c8b7a6",
+      "location": { "ward": 8, "street": "12", "coords": [19.0896, 72.8656] },
+      "evidence": [],
+      "resolution_time": null
+    },
+    {
+      "id": "C12347",
+      "citizen_id": "CIT003",
+      "category": "Road",
+      "text": "Large pothole near school gate causing accidents. Please repair urgently.",
+      "urgency": "High",
+      "status": "Resolved",
+      "created_at": "2024-01-10T11:00:00Z",
+      "assigned_to": "FW003",
+      "blockchain_tx": "0x9c0f1e5d4c3b2a1f0e9d8c7b6a5f4e3d2c1b0a9f8e7d6c5b4a3f2e1d0c9b8a7",
+      "location": { "ward": 5, "street": "8", "coords": [19.0728, 72.8826] },
+      "evidence": ["photo_pothole_before.jpg", "photo_pothole_after.jpg"],
+      "resolution_time": "48",
+      "resolved_at": "2024-01-12T14:30:00Z"
+    }
+  ],
+  "field_workers": [
+    {
+      "id": "FW001",
+      "name": "Rajesh Kumar",
+      "area": "North Zone",
+      "active_tasks": 3,
+      "completed_tasks": 24,
+      "efficiency_score": 92,
+      "location": [19.0760, 72.8777]
+    },
+    {
+      "id": "FW002",
+      "name": "Priya Singh",
+      "area": "South Zone",
+      "active_tasks": 2,
+      "completed_tasks": 28,
+      "efficiency_score": 95,
+      "location": [19.0896, 72.8656]
+    },
+    {
+      "id": "FW003",
+      "name": "Amit Sharma",
+      "area": "East Zone",
+      "active_tasks": 4,
+      "completed_tasks": 21,
+      "efficiency_score": 88,
+      "location": [19.0728, 72.8826]
+    }
+  ],
+  "districts": [
+    {
+      "id": "DIST001",
+      "name": "Mumbai",
+      "state": "Maharashtra",
+      "total_complaints": 152,
+      "resolved": 128,
+      "pending": 24,
+      "integrity_score": 94,
+      "avg_resolution_time": "2.1",
+      "wards": 24,
+      "field_workers": 18
+    },
+    {
+      "id": "DIST002",
+      "name": "Pune",
+      "state": "Maharashtra",
+      "total_complaints": 128,
+      "resolved": 112,
+      "pending": 16,
+      "integrity_score": 91,
+      "avg_resolution_time": "2.5",
+      "wards": 18,
+      "field_workers": 14
+    },
+    {
+      "id": "DIST003",
+      "name": "Nagpur",
+      "state": "Maharashtra",
+      "total_complaints": 96,
+      "resolved": 82,
+      "pending": 14,
+      "integrity_score": 88,
+      "avg_resolution_time": "2.8",
+      "wards": 15,
+      "field_workers": 12
+    }
+  ],
+  "states": [
+    {
+      "code": "MH",
+      "name": "Maharashtra",
+      "compliance_score": 92,
+      "total_districts": 36,
+      "compliant_districts": 32,
+      "fund_utilization": 91,
+      "governance_score": 88
+    },
+    {
+      "code": "KA",
+      "name": "Karnataka",
+      "compliance_score": 88,
+      "total_districts": 30,
+      "compliant_districts": 26,
+      "fund_utilization": 87,
+      "governance_score": 85
+    },
+    {
+      "code": "TN",
+      "name": "Tamil Nadu",
+      "compliance_score": 94,
+      "total_districts": 38,
+      "compliant_districts": 35,
+      "fund_utilization": 93,
+      "governance_score": 91
+    },
+    {
+      "code": "GJ",
+      "name": "Gujarat",
+      "compliance_score": 90,
+      "total_districts": 33,
+      "compliant_districts": 30,
+      "fund_utilization": 89,
+      "governance_score": 87
+    },
+    {
+      "code": "KL",
+      "name": "Kerala",
+      "compliance_score": 96,
+      "total_districts": 14,
+      "compliant_districts": 14,
+      "fund_utilization": 95,
+      "governance_score": 93
+    }
+  ],
+  "analytics": {
+    "complaints_trend": [
+      { "month": "Jan", "count": 45 },
+      { "month": "Feb", "count": 52 },
+      { "month": "Mar", "count": 48 },
+      { "month": "Apr", "count": 61 },
+      { "month": "May", "count": 58 },
+      { "month": "Jun", "count": 67 }
+    ],
+    "category_distribution": [
+      { "name": "Water", "value": 28 },
+      { "name": "Electricity", "value": 22 },
+      { "name": "Road", "value": 18 },
+      { "name": "Health", "value": 15 },
+      { "name": "Sanitation", "value": 12 },
+      { "name": "Education", "value": 5 }
+    ],
+    "resolution_status": [
+      { "status": "Resolved", "count": 245 },
+      { "status": "In Progress", "count": 52 },
+      { "status": "Pending", "count": 28 },
+      { "status": "Assigned", "count": 18 }
+    ]
+  },
+  "ai_responses": {
+    "last_generated": "2024-01-15T10:00:00Z",
+    "cached_queries": {
+      "fund_allocation": "Districts requiring urgent fund allocation: Raigad (Integrity: 72), Dhule (Resource utilization: 64%). Recommended: ₹2.3 Cr for Raigad, ₹1.8 Cr for Dhule.",
+      "district_performance": "Mumbai (94%, 2.1d avg), Pune (91%, 2.5d), Nagpur (88%, 2.8d). Raigad needs attention (72%, 4.8d).",
+      "risk_analysis": "5 risk patterns: 2 high-risk districts (declining trends), 3 medium-risk (resource constraints). Intervention needed in Raigad and Dhule within 14 days."
+    }
+  },
+  "blockchain_logs": [
+    {
+      "complaint_id": "C12345",
+      "tx_hash": "0x7a8f9e3d2c1b0a9f8e7d6c5b4a3f2e1d0c9b8a7f6e5d4c3b2a1f0e9d8c7b6a5",
+      "block_number": 45123456,
+      "timestamp": "2024-01-14T08:35:00Z",
+      "gas_used": "21000",
+      "status": "confirmed"
+    },
+    {
+      "complaint_id": "C12346",
+      "tx_hash": "0x8b9f0e4d3c2b1a0f9e8d7c6b5a4f3e2d1c0b9a8f7e6d5c4b3a2f1e0d9c8b7a6",
+      "block_number": 45123457,
+      "timestamp": "2024-01-13T15:25:00Z",
+      "gas_used": "21000",
+      "status": "confirmed"
+    }
+  ]
+}

@@ -1,0 +1,107 @@
+{
+  "openai": {
+    "governance_queries": {
+      "fund_allocation": {
+        "citizen": "Based on current data, you have 3 active complaints. I recommend checking complaint #C12345 status which is awaiting field inspection.",
+        "field": "Priority tasks in your area: Ward 3 water contamination (critical), Ward 7 electrical hazard (high). Optimal route: 3→7→1 (7.2km, ~2.5hrs).",
+        "district": "Ward 3 requires immediate attention with 76% resolution rate (below target). Recommend allocating 2 additional field officers and expediting pending water infrastructure complaints.",
+        "state": "Districts requiring urgent fund allocation: Raigad (Integrity Index: 72), Dhule (Resource utilization: 64%). Recommended allocation: ₹2.3 Cr for Raigad infrastructure, ₹1.8 Cr for Dhule healthcare.",
+        "national": "Top 3 states needing federal support: Bihar (61% compliance), Uttar Pradesh (65%), West Bengal (67%). Priority sectors: Rural healthcare infrastructure, road connectivity, water supply modernization."
+      },
+      "district_analysis": {
+        "state": "District Performance Summary:\n• Mumbai: 94% (Excellent) - 2.1 days avg resolution\n• Pune: 91% (Good) - 2.5 days\n• Nagpur: 88% (Good) - 2.8 days\n• Raigad: 72% (Needs Improvement) - 4.8 days\n\nRecommendation: Raigad requires policy intervention and resource reallocation.",
+        "national": "State-wise compliance breakdown:\n• Top performers: Kerala (96%), Tamil Nadu (94%), Maharashtra (92%)\n• Moderate: Karnataka (88%), Gujarat (90%)\n• Attention needed: Bihar (61%), UP (65%), WB (67%)\n\nNational average: 88% compliance (↑3% from Q3)"
+      },
+      "risk_patterns": {
+        "state": "5 risk patterns identified:\n🔴 High Risk (2 districts): Declining trend in resolution rates\n🟡 Medium Risk (3 districts): Resource constraints\n🟢 Low Risk (31 districts): Stable operations\n\nPredictive model suggests intervention in Raigad and Dhule within 14 days to prevent escalation.",
+        "national": "National risk assessment:\n• Infrastructure degradation: 7 states showing aging infrastructure patterns\n• Resource gaps: 12 states below optimal staffing\n• Digital divide: 5 states with <60% digital adoption\n\nRecommended action: Federal infrastructure grant program targeting identified states."
+      },
+      "complaint_status": {
+        "citizen": "Your complaint #C12345 (Water Supply - Ward 12):\n• Status: In Progress\n• Assigned to: Field Officer Rajesh Kumar\n• Expected resolution: 2-3 days\n• Scheduled visit: Tomorrow 10:00 AM\n\nYou'll receive SMS notification when resolved.",
+        "field": "Today's assigned complaints:\n• Critical (2): Response needed <4hrs\n• High (5): Response needed <24hrs\n• Medium (8): Response needed <72hrs\n\nTotal: 15 complaints | Completion rate: 87% (this week)"
+      },
+      "default": "I'm your Governance AI Assistant. I can help with complaint tracking, analytics, resource allocation, and policy insights. What would you like to know?"
+    },
+    "chat_responses": [
+      "Based on the current governance data, I can provide detailed insights. What specific area would you like to explore?",
+      "I've analyzed the patterns in your jurisdiction. Here are the key findings...",
+      "Your complaint has been successfully categorized and assigned appropriate urgency level.",
+      "The integrity index shows improvement trends in 78% of monitored districts.",
+      "Predictive analytics suggest optimal resource allocation for maximum impact.",
+      "Cross-departmental collaboration opportunities identified in 3 high-priority areas."
+    ]
+  },
+  "whisper": {
+    "transcriptions": {
+      "water_supply": "No water supply in our area since last two days. Ward 12, Street number 5. Very urgent issue, please help.",
+      "electricity": "Frequent power cuts happening every evening between 6 to 9 PM. Affecting students during study time.",
+      "road_repair": "Large pothole near the school gate is very dangerous. Many accidents have happened. Please repair urgently.",
+      "health_center": "Primary health center lacks basic medicines. Doctor is also not available most days.",
+      "sanitation": "Garbage has not been collected for one week. Creating health hazard in our locality.",
+      "default": "नमस्ते। मैं एक शिकायत दर्ज करना चाहता हूं। हमारे क्षेत्र में पानी की आपूर्ति नहीं हो रही है।"
+    },
+    "language_detection": {
+      "hi": "hindi",
+      "en": "english",
+      "mr": "marathi",
+      "ta": "tamil",
+      "te": "telugu",
+      "bn": "bengali",
+      "gu": "gujarati",
+      "kn": "kannada",
+      "ml": "malayalam",
+      "or": "odia",
+      "pa": "punjabi"
+    }
+  },
+  "blockchain": {
+    "mock_transactions": {
+      "prefix": "MCK-TX-",
+      "explorer_base": "https://mock.polygonscan.com/tx/",
+      "contract_address": "0xMOCK1234567890ABCDEF",
+      "gas_used": "21000",
+      "block_number_base": 45000000
+    }
+  },
+  "classification": {
+    "categories": {
+      "water": ["water", "supply", "tap", "pipeline", "tank", "leak", "नल", "पानी"],
+      "electricity": ["power", "electricity", "light", "transformer", "cable", "बिजली", "लाइट"],
+      "road": ["road", "pothole", "bridge", "footpath", "street", "सड़क"],
+      "health": ["hospital", "doctor", "medicine", "clinic", "PHC", "अस्पताल", "दवा"],
+      "sanitation": ["garbage", "waste", "drain", "toilet", "cleanliness", "कचरा", "नाली"],
+      "education": ["school", "teacher", "books", "building", "स्कूल"]
+    },
+    "urgency_keywords": {
+      "critical": ["urgent", "emergency", "critical", "danger", "immediately", "तुरंत", "खतरा"],
+      "high": ["soon", "important", "quickly", "जल्दी"],
+      "medium": ["needed", "required", "please", "कृपया"],
+      "low": ["when possible", "convenient", "sometime"]
+    }
+  },
+  "vector_db": {
+    "sample_documents": [
+      {
+        "id": "doc_001",
+        "title": "Water Supply Management Guidelines",
+        "content": "Standard operating procedures for addressing water supply complaints including pipeline maintenance, tank cleaning, and emergency response protocols.",
+        "category": "water",
+        "embedding_mock": "vector_placeholder_water_001"
+      },
+      {
+        "id": "doc_002",
+        "title": "Electricity Grid Maintenance Protocol",
+        "content": "Guidelines for handling power outage complaints, transformer maintenance, and load distribution optimization.",
+        "category": "electricity",
+        "embedding_mock": "vector_placeholder_electricity_001"
+      },
+      {
+        "id": "doc_003",
+        "title": "Road Infrastructure Standards",
+        "content": "Quality standards for road construction, pothole repair timelines, and safety compliance requirements.",
+        "category": "roads",
+        "embedding_mock": "vector_placeholder_roads_001"
+      }
+    ]
+  }
+}

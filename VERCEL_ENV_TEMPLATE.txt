@@ -1,0 +1,15 @@
+# Environment Variables for Vercel Frontend Deployment
+# Add these to your Vercel project settings
+
+# InsForge Configuration
+REACT_APP_INSFORGE_URL=https://89gp4et3.us-east.insforge.app
+
+# Google OAuth (if using Google login)
+REACT_APP_GOOGLE_CLIENT_ID=58577006087-lnlbas9p1u5388fj9oicehr11osl78ab.apps.googleusercontent.com
+
+# Optional: Analytics
+# REACT_APP_ANALYTICS_ID=your-analytics-id
+
+# Backend API URLs (for backward compatibility, can be removed if using InsForge exclusively)
+# REACT_APP_API_URL=https://your-flask-backend-url.up.railway.app
+# REACT_APP_AUTH_API_URL=https://your-replit-backend-url.up.railway.app

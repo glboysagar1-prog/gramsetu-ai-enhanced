@@ -1,0 +1,28 @@
+# Audio Upload Directory
+
+This directory stores temporary audio files during voice complaint processing.
+
+## Usage
+
+Audio files are:
+1. Uploaded by citizens via API
+2. Processed by the voice complaint service
+3. Automatically deleted after processing
+
+## Storage
+
+- **Max file size**: 10 MB
+- **Supported formats**: WAV, MP3, OGG, M4A, FLAC, WebM, AAC
+- **Retention**: Files are deleted immediately after processing
+- **Security**: Validated for type, size, and format
+
+## Cleanup
+
+The system automatically removes files after processing to:
+- Save disk space
+- Maintain privacy
+- Prevent data accumulation
+
+## Note
+
+This directory should remain empty in production (files are ephemeral).

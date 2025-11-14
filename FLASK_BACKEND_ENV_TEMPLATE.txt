@@ -1,0 +1,9 @@
+# Environment variables for Flask Backend
+# Add these to your Railway project settings
+
+PORT=5000
+DATABASE_URL=postgresql://postgres:password@host:5432/database
+REDIS_URL=redis://host:6379
+JWT_SECRET=your-super-secret-jwt-key-change-in-production
+OPENAI_API_KEY=your-openai-api-key (optional)
+THIRDWEB_API_KEY=your-thirdweb-api-key (optional)

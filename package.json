@@ -1,0 +1,67 @@
+{
+  "name": "gramsetu-ai-dashboard",
+  "version": "1.0.0",
+  "description": "District Dashboard for GramSetu AI",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "test:e2e": "playwright test",
+    "test:e2e:ui": "playwright test --ui",
+    "test:ci": "npm run lint && npm run test -- --watchAll=false && npm run test:e2e",
+    "test:services": "node test-services.js",
+    "test:gemini": "node test-gemini-simple.js",
+    "list:gemini-models": "node list-gemini-models.js",
+    "verify:gemini": "sh scripts/verify-gemini-setup.sh",
+    "lint": "eslint src --ext .js,.jsx --max-warnings=0",
+    "lint:fix": "eslint src --ext .js,.jsx --fix",
+    "setup:env": "node setup-env.js",
+    "preview": "node preview.js",
+    "stress-test": "sh scripts/stress-test.sh",
+    "eject": "react-scripts eject",
+    "docker:build": "docker-compose build",
+    "docker:up": "docker-compose up -d",
+    "docker:down": "docker-compose down",
+    "release": "sh scripts/create-release.sh"
+  },
+  "dependencies": {
+    "@google/generative-ai": "^0.24.1",
+    "@insforge/sdk": "^0.0.56",
+    "@react-three/drei": "^10.7.6",
+    "@react-three/fiber": "^9.4.0",
+    "axios": "^1.12.2",
+    "chart.js": "^4.5.1",
+    "dotenv": "^17.2.3",
+    "framer-motion": "^12.23.24",
+    "jwt-decode": "^4.0.0",
+    "lucide-react": "^0.546.0",
+    "react": "^18.2.0",
+    "react-chartjs-2": "^5.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^7.9.4",
+    "react-scripts": "5.0.1",
+    "recharts": "^3.3.0",
+    "three": "^0.180.0"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.40.0",
+    "@testing-library/jest-dom": "^6.1.5",
+    "@testing-library/react": "^14.1.2",
+    "@testing-library/user-event": "^14.5.1",
+    "eslint": "^8.55.0",
+    "eslint-config-react-app": "^7.0.1"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}

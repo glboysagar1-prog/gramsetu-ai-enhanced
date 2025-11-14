@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Browser Authentication Test</title>
+</head>
+<body>
+    <h1>Browser Authentication Test</h1>
+    <button id="testBtn">Test Authentication</button>
+    <div id="result"></div>
+
+    <script type="module">
+        // Import the InsForge SDK
+        import { createClient } from 'https://cdn.jsdelivr.net/npm/@insforge/sdk@latest/dist/index.min.js';
+        
+        document.getElementById('testBtn').addEventListener('click', async () => {
+            const resultDiv = document.getElementById('result');
+            resultDiv.innerHTML = 'Testing...';
+            
+            try {
+                // Initialize client
+                const client = createClient({ 
+                    baseUrl: 'https://89gp4et3.us-east.insforge.app'
+                });
+                
+                resultDiv.innerHTML += '<p>SDK initialized</p>';
+                
+                // Test authentication with fake credentials
+                const { data, error } = await client.auth.signInWithPassword({
+                    email: 'test@example.com',
+                    password: 'testpassword'
+                });
+                
+                if (error) {
+                    resultDiv.innerHTML += `<p>Error (expected): ${error.message}</p>`;
+                } else {
+                    resultDiv.innerHTML += `<p>Unexpected success: ${JSON.stringify(data)}</p>`;
+                }
+            } catch (error) {
+                resultDiv.innerHTML += `<p>Exception: ${error.message}</p>`;
+                console.error('Test failed:', error);
+            }
+        });
+    </script>
+</body>
+</html>

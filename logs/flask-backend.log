@@ -1,0 +1,26 @@
+2025-10-24 14:02:55,870 - INFO - AI fallbacks loaded successfully
+2025-10-24 14:02:55,893 - INFO - Database initialized successfully!
+2025-10-24 14:02:55,893 - INFO - Starting GramSetu AI backend server on http://localhost:5001
+⚠️  Voice services not available - using text-only mode
+AI Models will be loaded on-demand (lazy loading for faster startup)
+✅ AI libraries available - models will load on first use
+⚠️  Voice services not available - skipping classifier
+ * Serving Flask app 'app'
+ * Debug mode: on
+2025-10-24 14:02:55,939 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5001
+ * Running on http://127.0.0.1:5001
+2025-10-24 14:02:55,939 - INFO - [33mPress CTRL+C to quit[0m
+2025-10-24 14:02:55,940 - INFO -  * Restarting with stat
+⚠️  Voice services not available - using text-only mode
+2025-10-24 14:02:57,624 - INFO - AI fallbacks loaded successfully
+2025-10-24 14:02:57,639 - INFO - Database initialized successfully!
+AI Models will be loaded on-demand (lazy loading for faster startup)
+✅ AI libraries available - models will load on first use
+⚠️  Voice services not available - skipping classifier
+2025-10-24 14:02:57,639 - INFO - Starting GramSetu AI backend server on http://localhost:5001
+2025-10-24 14:02:57,654 - WARNING -  * Debugger is active!
+2025-10-24 14:02:57,670 - INFO -  * Debugger PIN: 440-146-512
+/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/multiprocessing/resource_tracker.py:324: UserWarning: resource_tracker: There appear to be 1 leaked semaphore objects to clean up at shutdown: {'/loky-3227-wa09jc2f'}
+  warnings.warn(

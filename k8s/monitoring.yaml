@@ -1,0 +1,179 @@
+# GramSetu AI - Monitoring Configuration
+# Prometheus and Grafana setup for system monitoring
+
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: prometheus-config
+data:
+  prometheus.yml: |
+    global:
+      scrape_interval: 15s
+    scrape_configs:
+    - job_name: 'gramsetu-backend'
+      static_configs:
+      - targets: ['gramsetu-backend-service:5000']
+    - job_name: 'gramsetu-frontend'
+      static_configs:
+      - targets: ['gramsetu-frontend-service:80']
+    - job_name: 'gramsetu-postgres'
+      static_configs:
+      - targets: ['gramsetu-postgres-service:5432']
+    - job_name: 'gramsetu-redis'
+      static_configs:
+      - targets: ['gramsetu-redis-service:6379']
+
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: prometheus
+  labels:
+    app: monitoring
+    component: prometheus
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: monitoring
+      component: prometheus
+  template:
+    metadata:
+      labels:
+        app: monitoring
+        component: prometheus
+    spec:
+      containers:
+      - name: prometheus
+        image: prom/prometheus:v2.40.0
+        ports:
+        - containerPort: 9090
+        volumeMounts:
+        - name: config-volume
+          mountPath: /etc/prometheus/
+        - name: storage-volume
+          mountPath: /prometheus/
+        resources:
+          requests:
+            memory: "256Mi"
+            cpu: "200m"
+          limits:
+            memory: "512Mi"
+            cpu: "500m"
+      volumes:
+      - name: config-volume
+        configMap:
+          name: prometheus-config
+      - name: storage-volume
+        persistentVolumeClaim:
+          claimName: prometheus-pvc
+
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: grafana
+  labels:
+    app: monitoring
+    component: grafana
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: monitoring
+      component: grafana
+  template:
+    metadata:
+      labels:
+        app: monitoring
+        component: grafana
+    spec:
+      containers:
+      - name: grafana
+        image: grafana/grafana:9.3.0
+        ports:
+        - containerPort: 3000
+        env:
+        - name: GF_SECURITY_ADMIN_PASSWORD
+          valueFrom:
+            secretKeyRef:
+              name: grafana-secrets
+              key: admin-password
+        volumeMounts:
+        - name: storage-volume
+          mountPath: /var/lib/grafana
+        resources:
+          requests:
+            memory: "128Mi"
+            cpu: "100m"
+          limits:
+            memory: "256Mi"
+            cpu: "200m"
+      volumes:
+      - name: storage-volume
+        persistentVolumeClaim:
+          claimName: grafana-pvc
+
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: prometheus-service
+spec:
+  selector:
+    app: monitoring
+    component: prometheus
+  ports:
+  - protocol: TCP
+    port: 9090
+    targetPort: 9090
+  type: ClusterIP
+
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: grafana-service
+spec:
+  selector:
+    app: monitoring
+    component: grafana
+  ports:
+  - protocol: TCP
+    port: 3000
+    targetPort: 3000
+  type: LoadBalancer
+
+---
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: prometheus-pvc
+spec:
+  accessModes:
+    - ReadWriteOnce
+  resources:
+    requests:
+      storage: 5Gi
+
+---
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: grafana-pvc
+spec:
+  accessModes:
+    - ReadWriteOnce
+  resources:
+    requests:
+      storage: 2Gi
+
+---
+apiVersion: v1
+kind: Secret
+metadata:
+  name: grafana-secrets
+type: Opaque
+data:
+  # admin password should be base64 encoded
+  admin-password: YWRtaW4xMjM0  # admin1234

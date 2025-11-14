@@ -1,0 +1,212 @@
+AI fallbacks loaded successfully
+Database initialized successfully!
+Starting GramSetu AI backend server on http://localhost:5000
+AI fallbacks loaded successfully
+Database initialized successfully!
+Starting GramSetu AI backend server on http://localhost:5000
+AI fallbacks loaded successfully
+Database initialized successfully!
+Starting GramSetu AI backend server on http://localhost:5001
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5001
+ * Running on http://192.168.137.106:5001
+[33mPress CTRL+C to quit[0m
+ * Restarting with stat
+AI fallbacks loaded successfully
+Database initialized successfully!
+Starting GramSetu AI backend server on http://localhost:5001
+ * Debugger is active!
+ * Debugger PIN: 977-423-707
+127.0.0.1 - - [23/Oct/2025 16:29:33] "GET /healthz HTTP/1.1" 200 -
+127.0.0.1 - - [23/Oct/2025 16:30:15] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+ * Detected change in '/Users/sagar/Documents/GramSetu AI – National Governance Intelligence Network/app.py', reloading
+ * Restarting with stat
+AI fallbacks loaded successfully
+Database initialized successfully!
+Starting GramSetu AI backend server on http://localhost:5001
+ * Debugger is active!
+ * Debugger PIN: 977-423-707
+AI fallbacks loaded successfully
+Database initialized successfully!
+Starting GramSetu AI backend server on http://localhost:5001
+AI fallbacks loaded successfully
+Database initialized successfully!
+Starting GramSetu AI backend server on http://localhost:5002
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5002
+ * Running on http://192.168.0.103:5002
+[33mPress CTRL+C to quit[0m
+ * Restarting with stat
+AI fallbacks loaded successfully
+Database initialized successfully!
+Starting GramSetu AI backend server on http://localhost:5002
+ * Debugger is active!
+ * Debugger PIN: 977-423-707
+AI fallbacks loaded successfully
+Database initialized successfully!
+ * Detected change in '/Users/sagar/Documents/GramSetu AI – National Governance Intelligence Network/app.py', reloading
+ * Restarting with stat
+AI fallbacks loaded successfully
+Database initialized successfully!
+AI fallbacks loaded successfully
+Database initialized successfully!
+AI fallbacks loaded successfully
+Database initialized successfully!
+Starting GramSetu AI backend server on http://localhost:5002
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5002
+ * Running on http://10.162.207.84:5002
+[33mPress CTRL+C to quit[0m
+ * Restarting with stat
+AI fallbacks loaded successfully
+Database initialized successfully!
+Starting GramSetu AI backend server on http://localhost:5002
+ * Debugger is active!
+ * Debugger PIN: 977-423-707
+Use pytorch device_name: mps
+Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+Use pytorch device_name: mps
+Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+Starting GramSetu AI backend server on http://localhost:5002
+Starting GramSetu AI backend server on http://localhost:5001
+ * Debugger is active!
+ * Debugger PIN: 977-423-707
+AI fallbacks loaded successfully
+Database initialized successfully!
+Starting GramSetu AI backend server on http://localhost:5002
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5002
+ * Running on http://10.162.207.84:5002
+[33mPress CTRL+C to quit[0m
+ * Restarting with stat
+AI fallbacks loaded successfully
+Database initialized successfully!
+Starting GramSetu AI backend server on http://localhost:5002
+ * Debugger is active!
+ * Debugger PIN: 977-423-707
+AI fallbacks loaded successfully
+Database initialized successfully!
+Starting GramSetu AI backend server on http://localhost:5002
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5002
+ * Running on http://127.0.0.1:5002
+[33mPress CTRL+C to quit[0m
+ * Restarting with stat
+AI fallbacks loaded successfully
+Database initialized successfully!
+Starting GramSetu AI backend server on http://localhost:5002
+ * Debugger is active!
+ * Debugger PIN: 977-423-707
+Use pytorch device_name: mps
+Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+Starting GramSetu AI backend server on http://localhost:5002
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5002
+ * Running on http://10.195.83.11:5002
+[33mPress CTRL+C to quit[0m
+ * Restarting with stat
+AI fallbacks loaded successfully
+Database initialized successfully!
+Starting GramSetu AI backend server on http://localhost:5002
+ * Debugger is active!
+ * Debugger PIN: 977-423-707
+AI fallbacks loaded successfully
+Database initialized successfully!
+Starting GramSetu AI backend server on http://localhost:5002
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5002
+ * Running on http://10.195.83.11:5002
+[33mPress CTRL+C to quit[0m
+ * Restarting with stat
+AI fallbacks loaded successfully
+Database initialized successfully!
+Starting GramSetu AI backend server on http://localhost:5002
+ * Debugger is active!
+ * Debugger PIN: 977-423-707
+AI fallbacks loaded successfully
+Database initialized successfully!
+Starting GramSetu AI backend server on http://localhost:5003
+AI fallbacks loaded successfully
+Database initialized successfully!
+Starting GramSetu AI backend server on http://localhost:5001
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5001
+ * Running on http://10.195.83.11:5001
+[33mPress CTRL+C to quit[0m
+ * Restarting with stat
+AI fallbacks loaded successfully
+Database initialized successfully!
+Starting GramSetu AI backend server on http://localhost:5001
+ * Debugger is active!
+ * Debugger PIN: 977-423-707
+127.0.0.1 - - [24/Oct/2025 02:18:07] "GET /healthz HTTP/1.1" 200 -
+127.0.0.1 - - [24/Oct/2025 02:18:57] "GET /healthz HTTP/1.1" 200 -
+127.0.0.1 - - [24/Oct/2025 02:20:46] "GET /healthz HTTP/1.1" 200 -
+AI fallbacks loaded successfully
+Database initialized successfully!
+Starting GramSetu AI backend server on http://localhost:5001
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5001
+ * Running on http://10.195.83.11:5001
+[33mPress CTRL+C to quit[0m
+ * Restarting with stat
+AI fallbacks loaded successfully
+Database initialized successfully!
+Starting GramSetu AI backend server on http://localhost:5001
+ * Debugger is active!
+ * Debugger PIN: 977-423-707
+AI fallbacks loaded successfully
+Database initialized successfully!
+Starting GramSetu AI backend server on http://localhost:5001
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5001
+ * Running on http://10.195.83.11:5001
+[33mPress CTRL+C to quit[0m
+ * Restarting with stat
+AI fallbacks loaded successfully
+Database initialized successfully!
+Starting GramSetu AI backend server on http://localhost:5001
+ * Debugger is active!
+ * Debugger PIN: 977-423-707
+127.0.0.1 - - [24/Oct/2025 02:25:42] "GET /healthz HTTP/1.1" 200 -
+127.0.0.1 - - [24/Oct/2025 02:26:13] "GET /healthz HTTP/1.1" 200 -
+AI fallbacks loaded successfully
+Database initialized successfully!
+Starting GramSetu AI backend server on http://localhost:5001
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5001
+ * Running on http://127.0.0.1:5001
+[33mPress CTRL+C to quit[0m
+ * Restarting with stat
+AI fallbacks loaded successfully
+Database initialized successfully!
+Starting GramSetu AI backend server on http://localhost:5001
+ * Debugger is active!
+ * Debugger PIN: 440-146-512
+AI fallbacks loaded successfully
+Redis not available, using in-memory cache
+Database initialized successfully!
+Starting GramSetu AI backend server on http://localhost:5001
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5001
+ * Running on http://192.168.1.15:5001
+[33mPress CTRL+C to quit[0m
+ * Restarting with stat
+AI fallbacks loaded successfully
+Redis not available, using in-memory cache
+Database initialized successfully!
+Starting GramSetu AI backend server on http://localhost:5001
+ * Debugger is active!
+ * Debugger PIN: 544-424-181
