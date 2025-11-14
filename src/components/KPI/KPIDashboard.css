@@ -1,0 +1,304 @@
+.kpi-dashboard {
+  padding: 20px;
+  background-color: #f8f9fa;
+  min-height: 100vh;
+}
+
+.dashboard-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.dashboard-header h1 {
+  color: #212529;
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.dashboard-header h2 {
+  color: #495057;
+  font-size: 1.5rem;
+  font-weight: normal;
+}
+
+.dashboard-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  gap: 20px;
+}
+
+.dashboard-section {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  padding: 20px;
+}
+
+.dashboard-section h3 {
+  margin-top: 0;
+  color: #212529;
+  border-bottom: 2px solid #e9ecef;
+  padding-bottom: 10px;
+}
+
+/* District Heatmap */
+.district-heatmap {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.heatmap-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+  gap: 10px;
+}
+
+.district-cell {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  border-radius: 4px;
+  background-color: #f8f9fa;
+}
+
+.district-color {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-bottom: 8px;
+}
+
+.district-info {
+  text-align: center;
+}
+
+.district-name {
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+
+.district-performance {
+  font-size: 0.8rem;
+  color: #6c757d;
+}
+
+.heatmap-legend {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 15px;
+  padding-top: 15px;
+  border-top: 1px solid #e9ecef;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 0.8rem;
+}
+
+.legend-color {
+  width: 20px;
+  height: 20px;
+  border-radius: 4px;
+}
+
+/* Officer Leaderboard */
+.leaderboard-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.top-performers, .worst-performers {
+  flex: 1;
+}
+
+.leaderboard-item {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 10px 0;
+  border-bottom: 1px solid #e9ecef;
+}
+
+.leaderboard-item:last-child {
+  border-bottom: none;
+}
+
+.rank {
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: #495057;
+  min-width: 30px;
+  text-align: center;
+}
+
+/* Officer Performance Card */
+.officer-performance-card {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 15px;
+  border-radius: 8px;
+  background-color: #f8f9fa;
+  flex: 1;
+}
+
+.officer-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.officer-header h4 {
+  margin: 0;
+  font-size: 1rem;
+}
+
+.district-tag {
+  background-color: #e7f5ff;
+  color: #1971c2;
+  padding: 2px 8px;
+  border-radius: 12px;
+  font-size: 0.8rem;
+}
+
+.performance-metrics {
+  display: flex;
+  justify-content: space-between;
+}
+
+.metric {
+  text-align: center;
+}
+
+.metric-label {
+  display: block;
+  font-size: 0.8rem;
+  color: #6c757d;
+}
+
+.metric-value {
+  display: block;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.performance-indicator {
+  height: 5px;
+  border-radius: 3px;
+}
+
+/* Fraud Alert Feed */
+.fraud-alert-feed {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.alert-item {
+  padding: 15px;
+  border-radius: 8px;
+  background-color: #f8f9fa;
+  border-left: 4px solid #e9ecef;
+}
+
+.alert-item:nth-child(1) {
+  border-left-color: #c92a2a;
+}
+
+.alert-item:nth-child(2) {
+  border-left-color: #ff6b6b;
+}
+
+.alert-item:nth-child(3) {
+  border-left-color: #fcc419;
+}
+
+.alert-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.alert-severity {
+  color: white;
+  padding: 2px 8px;
+  border-radius: 12px;
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+
+.alert-time {
+  color: #6c757d;
+  font-size: 0.8rem;
+}
+
+.alert-content h5 {
+  margin: 0 0 5px 0;
+  font-size: 1rem;
+}
+
+.alert-description {
+  margin: 5px 0;
+  font-size: 0.9rem;
+  color: #495057;
+}
+
+.alert-type {
+  background-color: #e7f5ff;
+  color: #1971c2;
+  padding: 2px 8px;
+  border-radius: 12px;
+  font-size: 0.8rem;
+}
+
+/* Budget Summary */
+.budget-summary {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.budget-item {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.district-name {
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+
+.budget-bar {
+  height: 10px;
+  background-color: #e9ecef;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.budget-fill {
+  height: 100%;
+  border-radius: 5px;
+}
+
+.budget-stats {
+  font-size: 0.8rem;
+  color: #6c757d;
+  text-align: right;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .dashboard-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .heatmap-grid {
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+  }
+}
